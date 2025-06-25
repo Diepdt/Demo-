@@ -1,0 +1,151 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.btn {
+    min-width: 180px;
+    min-height: 70px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+    padding: 20px 35px;
+    margin: 20px;
+    font-size: 22px;
+    border: 3px solid #8B4513;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+    font-weight: 600;
+}
+
+body {
+    background-color: burlywood;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#image1 {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#image2 {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+.btn.small1 {
+    transform: scale(0.8);
+}
+
+.btn.small2 {
+    transform: scale(0.6);
+}
+
+.btn.small3 {
+    transform: scale(0.4);
+}
+
+.btn.small4 {
+    transform: scale(0.2);
+}
+
+.btn.hidden {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.btn.big1 {
+    transform: scale(1.2);
+}
+
+.btn.big2 {
+    transform: scale(1.4);
+}
+
+.btn.big3 {
+    transform: scale(1.6);
+}
+
+.btn.big4 {
+    transform: scale(1.8);
+}
+
+.btn.big5 {
+    transform: scale(2.0);
+}
+
+#yes-text {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+        margin: 15px 5px;
+    }
+    
+    .btn {
+        min-width: 150px;
+        min-height: 60px;
+        padding: 18px 30px;
+        margin: 15px;
+        font-size: 20px;
+    }
+    
+    #yes-text {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    #image1, #image2 {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+    body {
+        padding: 15px;
+    }
+}
+
+/* Responsive cho màn hình rất nhỏ */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        min-width: 120px;
+        min-height: 50px;
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+    
+    #yes-text {
+        font-size: 16px;
+    }
+    
+    #image1, #image2 {
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
